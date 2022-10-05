@@ -150,15 +150,18 @@ body {
 
 /* HERO */
 .hero {
+    max-width: 1600px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)),
         url(../images/hw-4/hero.jpg);
     background-size: cover;
     background-color: #C4C4C4;
-
-    padding-top: 200px;
-    padding-bottom: 200px;
 
     text-align: center;
 }
@@ -172,9 +175,7 @@ body {
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    
     color: var(--primary-white-color);
-
 }
 .main-button {
     min-width: 216px ;
@@ -187,6 +188,8 @@ body {
     line-height: 1.9;
     text-align: center;
     letter-spacing: 0.06em;
+    border: transparent; 
+    border-radius: 4px;
     
     color: var(--primary-white-color);
     background-color: var(--accent-color);
@@ -359,6 +362,7 @@ background-color:#fff;
     line-height: 1.6;
     color: var(--title-text-color);
     cursor: pointer;
+    border-radius: 4px;
 }
 
 .button-list{
@@ -367,7 +371,6 @@ background-color:#fff;
     margin-bottom: 50px;
 }
 .button-list-item {
-    border-radius: 4px;
     background-color: #F5F4FA;
 }
 .button-list-item:not(:last-child) {
@@ -394,9 +397,14 @@ background-color:#fff;
 margin-right: 30px;
 margin-bottom: 30px;
 }
-.projects-list-item:hover {
-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+.project-list-link {
+    display: block;
 }
+.project-list-link:hover,
+.project-list-link:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+
 .project-title {
     margin-bottom: 4px;
     font-weight: 700;
@@ -450,6 +458,7 @@ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1p
 
 .footer-container {
     display: flex;
+    align-items: baseline;
     
 }
 .footer-address {
@@ -458,7 +467,7 @@ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1p
 .title-social {
     font-size: inherit;
     text-transform: uppercase;
-    line-height: 1,14;
+    line-height: 1.2;
 
     color: var(--primary-white-color);
 
